@@ -1,0 +1,23 @@
+.profile {
+}
+.description {
+}
+.avatar {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.name {
+}
+.tag {
+}
+.location {
+}
+.stats {
+  display: flex;
+  list-style: none;
+}
+.label {
+}
+.quantity {
+}
