@@ -1,15 +1,17 @@
 import styled from 'styled-components';
+import getRandomHexColor from 'components/Statistics/getRandomColor';
 
 export const StyledItem = styled.li`
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
 
-  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
 
   &:hover,
   &:focus {
-    box-shadow: -1px -2px 10px #fff, 5px 5px 20px #233fa4;
+    box-shadow: -1px -2px 10px ${getRandomHexColor},
+      5px 5px 20px ${getRandomHexColor};
   }
 `;
 

@@ -4,6 +4,7 @@ import {
   StyledImg,
   StyledName,
 } from './FriendListItem.styled';
+import PropTypes from 'prop-types';
 
 export const FriendListItem = ({ friend }) => (
   <StyledItem>
@@ -12,3 +13,11 @@ export const FriendListItem = ({ friend }) => (
     <StyledName>{friend.name}</StyledName>
   </StyledItem>
 );
+
+FriendListItem.propTypes = {
+  friend: PropTypes.shape({
+    isOnline: PropTypes.bool,
+    avatar: PropTypes.string,
+    name: PropTypes.string,
+  }),
+};
