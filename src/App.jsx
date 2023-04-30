@@ -1,10 +1,11 @@
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
 import { FriendList } from 'components/FriendList/FriendList';
+import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 import user from 'components/user.json';
 import data from 'components/data.json';
 import friends from 'components/friends.json';
-// import transactions from 'components/transactions.json';
+import transactions from 'components/transactions.json';
 
 export const App = () => {
   return (
@@ -12,6 +13,8 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
+        flexWrap: 'wrap',
+        gap: 50,
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -39,6 +42,7 @@ export const App = () => {
       <div>
         <FriendList friends={friends} />
       </div>
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
