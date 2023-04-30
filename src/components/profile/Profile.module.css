@@ -11,28 +11,21 @@
   padding: 50px 10px;
 }
 .avatar {
-  display: block;
-  height: auto;
-  width: 100%;
   margin-bottom: 40px;
   border-radius: 50%;
   border: 1px dashed rgb(90, 90, 90);
 }
 .name {
-  margin: 0;
+  /* margin: 0; */
 }
 .tag {
   margin: 20px 0;
 }
 .location {
-  margin: 0;
+  /* margin: 0; */
 }
 .stats {
-  margin: 0;
-  padding: 0;
   display: flex;
-
-  list-style: none;
   border-top: 1px solid rgb(0, 0, 0);
 }
 .item {
