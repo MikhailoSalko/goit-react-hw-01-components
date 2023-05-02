@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import getRandomHexColor from 'components/Statistics/getRandomColor';
+import getRandomHexColor from 'getRandomColor';
 
 export const StyledItem = styled.li`
   display: flex;

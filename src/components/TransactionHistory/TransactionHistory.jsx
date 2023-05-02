@@ -10,7 +10,7 @@ import {
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <StyledTable className="transaction-history">
+    <StyledTable>
       <StyledHeader>
         <StyledRow>
           <StyledColumn>Type</StyledColumn>
@@ -34,13 +34,17 @@ export const TransactionHistory = ({ items }) => {
   );
 };
 
+TransactionHistory.defaultProps = {
+  items: [],
+};
+
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string,
-      type: PropTypes.string,
-      amount: PropTypes.string,
-      currency: PropTypes.string,
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
     })
   ),
 };

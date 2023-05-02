@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import getRandomHexColor from 'components/Statistics/getRandomColor';
+import getRandomHexColor from 'getRandomColor';
 
 export const StyledTable = styled.table`
   border: 1px solid black;
